@@ -1,0 +1,73 @@
+body{
+    margin: 0%;padding: 0%;
+    background-color: rgb(247, 232, 206);
+}
+.container{
+    margin: auto;width: 34%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.logo-mail{
+    width: 25%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+.thanks{
+    color: blue;
+    width: 100%;
+    text-align: center;
+}
+.new-order{
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: -3%;
+    font-size: 1.8em;
+}
+.text-content{
+    width: 90%;
+    text-align: center;
+    line-height: 1.2em;
+    font-size: 1.5em;
+    text-transform: unset;
+}
+.divider{
+    background-color: blue;
+    height: 1px;
+    width: 20%;
+}
+.button-space-personal{
+    text-decoration: none;
+    margin-bottom: 5%;
+    border: 1px solid black;
+    padding: 2% 5% 2% 5%;
+    border-radius: 25px;
+    height: 20%;
+    background-color: #189fdb;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex
+}
+.footer{
+    width: 100%;
+    background-color:#189fdb ;
+}
+.section{
+    color: white;
+    text-align: center;
+}
+.text-footer{
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
+.dislike{
+    color: black;
+}
+.decayeux{
+    width: 100%;
+}
