@@ -86,7 +86,7 @@ ul {
   }
 p
   {
-    font-size: 0.8em;
+    font-size: 1.2em;
   }
   [class^="check"]::after{
     font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058";
@@ -267,11 +267,11 @@ details[open] summary {
   background-color: #006ba0 !important;
 }
 
-.SOL_quote{
+/* .SOL_quote{
   position: fixed;
   width: 50%;
   top: 9%;
-}
+} */
 
 .SOL_TilteConfigurator{
   position: fixed;
@@ -286,9 +286,9 @@ details[open] summary {
   font-weight: 120;
 }
 
-.SOL_select{
+/* .SOL_select{
   margin-top: 5%;
-}
+} */
 
 
 /* Create custom rotating down-up-arrow with an inline svg - replace with your own arrow if this caret isn't to your liking */
