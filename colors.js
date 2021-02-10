@@ -1,6 +1,6 @@
 let request = new XMLHttpRequest();
 request.overrideMimeType("application/json");
-request.open('GET', 'assets/js/color.json', true);
+request.open('GET', 'color.json', true);
 request.onreadystatechange = function () {
   if (request.readyState == 4 && request.status == "200") {
     var json = JSON.parse(request.responseText);
@@ -11,7 +11,7 @@ request.onreadystatechange = function () {
       colorStucture += `
       <li>
           <input type="radio" id="myradioColor${colorBlock.category}" name="color" value="${colorBlock.category}"/>
-          <label for="myradioColor${colorBlock.category}" onclick="checkColor(this.control.value);"><img class="SOL_RalImg" src="assets/image/ral/${colorBlock.picture}" alt="${colorBlock.color}"/>
+          <label for="myradioColor${colorBlock.category}" onclick="checkColor(this.control.value);"><img class="SOL_RalImg" src=" image/ral/${colorBlock.picture}" alt="${colorBlock.color}"/>
             <span class="SOL_labelRal" >${colorBlock.category}</span>
           </label>
       </li>`;
@@ -23,7 +23,7 @@ request.onreadystatechange = function () {
       colorPortal += `
       <li>
           <input type="radio" id="myradioColorPortal${colorBlockPortal.category}" name="colorPortal" value="${colorBlockPortal.category}"/>
-          <label for="myradioColorPortal${colorBlockPortal.category}" onclick="checkColorPortal(this.control.value);"><img class="SOL_RalImg" src="assets/image/ral/${colorBlockPortal.picture}"  alt="${colorBlockPortal.color}"/>
+          <label for="myradioColorPortal${colorBlockPortal.category}" onclick="checkColorPortal(this.control.value);"><img class="SOL_RalImg" src=" image/ral/${colorBlockPortal.picture}"  alt="${colorBlockPortal.color}"/>
             <span class="SOL_labelRal" >${colorBlockPortal.category}</span>
           </label>
       </li>`;
@@ -34,7 +34,7 @@ request.onreadystatechange = function () {
 request.send(null);
 // check Color
 function checkColor(colorName) {
-  // document.getElementById("image").src = "assets/image/"+colorName.substr(0,6)+"/"+colorName+".png";
+  // document.getElementById("image").src = " image/"+colorName.substr(0,6)+"/"+colorName+".png";
 
   //check Block
   var questionColor = document.getElementById("questionBlockColor");
@@ -49,7 +49,7 @@ function checkColor(colorName) {
 
 // check Color Portal
 function checkColorPortal(colorNamePortal) {
-  // document.getElementById("image").src = "assets/image/"+colorNamePortal.substr(0,6)+"/"+colorNamePortal+".png";
+  // document.getElementById("image").src = " image/"+colorNamePortal.substr(0,6)+"/"+colorNamePortal+".png";
 
   //check Block
   var questionColorPortal = document.getElementById("questionPortillionColor");

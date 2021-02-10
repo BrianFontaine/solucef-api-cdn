@@ -1,5 +1,5 @@
 function selectBlock(blockName){
-    document.getElementById("image").src = "assets/image/"+blockName.substr(0,6)+"/"+blockName+".png";
+    document.getElementById("image").src = "image/"+blockName.substr(0,6)+"/"+blockName+".png";
 
     //check Block
     var question = document.getElementById("questionBlock");

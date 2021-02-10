@@ -5,7 +5,7 @@
 //         if (this.value == 'Piquet') {
 //             let stakeRequest = new XMLHttpRequest();
 //             stakeRequest.overrideMimeType("application/json");
-//             stakeRequest.open('GET', 'assets/js/stake.json', true);
+//             stakeRequest.open('GET', 'stake.json', true);
 //             stakeRequest.onreadystatechange = function () {
 //                 if (stakeRequest.readyState == 4 && stakeRequest.status == "200") {
 //                     var json = JSON.parse(stakeRequest.responseText);
@@ -16,7 +16,7 @@
 //                         stakeType += `
 //                             <li>
 //                                 <input type="radio" id="myradio${stake.label}" name="stake" value="${stake.label}"/>
-//                                 <label for="myradio${stake.label}" onclick="checkstake(this.control.value);"><img class="SOL_gatelabel SOL_gateLabel"src="assets/image/piquet/${stake.picture}" alt="${stake.label}" />
+//                                 <label for="myradio${stake.label}" onclick="checkstake(this.control.value);"><img class="SOL_gatelabel SOL_gateLabel"src=" image/piquet/${stake.picture}" alt="${stake.label}" />
 //                                     <span class="SOL_labelGateText" style="background: #ffffffdb;">${stake.label}</span>
 //                                 </label>
 //                             </li>`;
@@ -33,7 +33,7 @@
 // }, 1500);
 
 // function checkstake(stakeName) {
-//     // document.getElementById("image").src = "assets/image/"+stakeName.substr(0,6)+"/"+stakeName+".png";
+//     // document.getElementById("image").src = " image/"+stakeName.substr(0,6)+"/"+stakeName+".png";
 
 //     //check Block
 //     var questionColor = document.getElementById("questionstakeType");

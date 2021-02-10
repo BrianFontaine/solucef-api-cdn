@@ -1,6 +1,6 @@
 let setupTypeRequest = new XMLHttpRequest();
 setupTypeRequest.overrideMimeType("application/json");
-setupTypeRequest.open('GET', 'assets/js/setupType.json', true);
+setupTypeRequest.open('GET', 'setupType.json', true);
 setupTypeRequest.onreadystatechange = function () {
   if (setupTypeRequest.readyState == 4 && setupTypeRequest.status == "200") {
     var json = JSON.parse(setupTypeRequest.responseText);
@@ -11,7 +11,7 @@ setupTypeRequest.onreadystatechange = function () {
       locationLevel += `
       <li>
           <input type="radio" id="myradio${setupType.label}" name="setupType" value="${setupType.label}"/>
-          <label for="myradio${setupType.label}" onclick="checkSetupType(this.control.value);"><img class="SOL_gatelabel SOL_gateLabel"src="assets/image/pose/${setupType.picture}" alt="${setupType.label}" />
+          <label for="myradio${setupType.label}" onclick="checkSetupType(this.control.value);"><img class="SOL_gatelabel SOL_gateLabel"src=" image/pose/${setupType.picture}" alt="${setupType.label}" />
             <span class="SOL_labelGateText" style="background: #ffffffdb;">${setupType.label}</span>
           </label>
       </li>`;
@@ -24,7 +24,7 @@ setupTypeRequest.send(null);
 document.getElementById('option').innerHTML="";
 
 function checkSetupType(setupTypeName) {
-  // document.getElementById("image").src = "assets/image/"+setupTypeName.substr(0,6)+"/"+setupTypeName+".png";
+  // document.getElementById("image").src = " image/"+setupTypeName.substr(0,6)+"/"+setupTypeName+".png";
   
   //check Block
   var questionColor = document.getElementById("questionSetupType");
@@ -40,7 +40,7 @@ function checkSetupType(setupTypeName) {
   if (setupTypeName == 'Piquet') {
     let stakeRequest = new XMLHttpRequest();
     stakeRequest.overrideMimeType("application/json");
-    stakeRequest.open('GET', 'assets/js/stake.json', true);
+    stakeRequest.open('GET', 'stake.json', true);
     stakeRequest.onreadystatechange = function () {
       if (stakeRequest.readyState == 4 && stakeRequest.status == "200") {
         var json = JSON.parse(stakeRequest.responseText);
@@ -51,7 +51,7 @@ function checkSetupType(setupTypeName) {
           stakeType += `
             <li>
               <input type="radio" id="myradio${stake.label}" name="stake" value="${stake.label}"/>
-                <label for="myradio${stake.label}" onclick="checkstake(this.control.value);"><img class="SOL_gatelabel SOL_gateLabel"src="assets/image/piquet/${stake.picture}" alt="${stake.label}" />
+                <label for="myradio${stake.label}" onclick="checkstake(this.control.value);"><img class="SOL_gatelabel SOL_gateLabel"src=" image/piquet/${stake.picture}" alt="${stake.label}" />
                   <span class="SOL_labelGateText" style="background: #ffffffdb;">${stake.label}</span>
                 </label>
             </li>`;
@@ -70,7 +70,7 @@ function checkSetupType(setupTypeName) {
 }
 
 function checkstake(stakeName) {
-  // document.getElementById("image").src = "assets/image/"+stakeName.substr(0,6)+"/"+stakeName+".png";
+  // document.getElementById("image").src = " image/"+stakeName.substr(0,6)+"/"+stakeName+".png";
 
   //check Block
   var questionColor = document.getElementById("questionstakeType");
