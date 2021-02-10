@@ -11,7 +11,7 @@ securityRequest.onreadystatechange = function () {
       securityLevel += `
       <li>
           <input type="radio" id="myradioColor${security.label}" name="securityLevel" value="${security.label}"/>
-          <label for="myradioColor${security.label}" onclick="checksecurity(this.control.value);"><img class="SOL_gatelabel SOL_gateLabel"src=" image/security/${security.picture}" alt="${security.label}" />
+          <label for="myradioColor${security.label}" onclick="checksecurity(this.control.value);"><img class="SOL_gatelabel SOL_gateLabel"src="https://brianfontaine.github.io/solucef-api-cdn/image//security/${security.picture}" alt="${security.label}" />
             <span class="SOL_labelGateText" >${security.label}</span>
           </label>
       </li>`;

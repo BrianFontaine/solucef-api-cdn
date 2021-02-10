@@ -11,7 +11,7 @@ locationRequest.onreadystatechange = function () {
       locationLevel += `
       <li>
           <input type="radio" id="myradio${location.location}" name="locationLevel" value="${location.location}"/>
-          <label for="myradio${location.location}" onclick="checkLocation(this.control.value);"><img id="${location.location}" class="SOL_gatelabel SOL_gateLabel"src=" image/Emplacement/${location.picture}" alt="${location.location}" />
+          <label for="myradio${location.location}" onclick="checkLocation(this.control.value);"><img id="${location.location}" class="SOL_gatelabel SOL_gateLabel"src="https://brianfontaine.github.io/solucef-api-cdn/image//Emplacement/${location.picture}" alt="${location.location}" />
             <span class="SOL_labelGateText" style="background: #ffffffdb;">${location.location}</span>
           </label>
       </li>`;
@@ -22,7 +22,7 @@ locationRequest.onreadystatechange = function () {
 locationRequest.send(null);
 
 function checkLocation(locationName) {
-    // document.getElementById("image").src = " image/"+locationName.substr(0,6)+"/"+locationName+".png";
+    // document.getElementById("image").src = "https://brianfontaine.github.io/solucef-api-cdn/image//"+locationName.substr(0,6)+"/"+locationName+".png";
   
     //check Block
     var questionColor = document.getElementById("questionLocation");

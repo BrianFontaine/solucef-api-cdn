@@ -1,6 +1,6 @@
 let gateRequest = new XMLHttpRequest();
 gateRequest.overrideMimeType("application/json");
-gateRequest.open('GET', 'individualGate.json', true);
+gateRequest.open('GET', 'https://brianfontaine.github.io/solucef-api-cdn/individualGate.json', true);
 gateRequest.onreadystatechange = function () {
   if (gateRequest.readyState == 4 && gateRequest.status == "200") {
     var json = JSON.parse(gateRequest.responseText);
@@ -11,7 +11,7 @@ gateRequest.onreadystatechange = function () {
       individualGates += `
       <li>
           <input type="radio" id="myradioColor${gateType.design}" name="gate" value="${gateType.design}"/>
-          <label for="myradioColor${gateType.design}" onclick="checkGateTypes(this.control.value);"><img class="SOL_gateDesign SOL_gateLabel"src=" image/individualGates/${gateType.picture}" alt="${gateType.design}" />
+          <label for="myradioColor${gateType.design}" onclick="checkGateTypes(this.control.value);"><img class="SOL_gateDesign SOL_gateLabel"src="https://brianfontaine.github.io/solucef-api-cdn/image/individualGates/${gateType.picture}" alt="${gateType.design}" />
             <span class="SOL_labelGateText" >${gateType.design}</span>
           </label>
       </li>`;
@@ -25,7 +25,7 @@ function checkGateTypes(gateType) {
     // let blockType = document.getElementsByClassName('blockType');
     // console.log(gateType);
     // let block = blockType[1].value.substr(5,3);
-    // document.getElementById("image").src = " image/"+blockType[1].value.substr(0,6)+"_"+gateType+"/"+block+"_"+gateType+".png";
+    // document.getElementById("image").src = "https://brianfontaine.github.io/solucef-api-cdn/image//"+blockType[1].value.substr(0,6)+"_"+gateType+"/"+block+"_"+gateType+".png";
   
     //check Block
     var questionColor = document.getElementById("questionDecor");

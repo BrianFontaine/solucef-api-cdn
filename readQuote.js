@@ -19,7 +19,7 @@ function readAllQuotes(){
                 quotesLevel += `
                 <div class="col-md-12 bg-secondary mx-auto mt-5 p-2 rounded text-white">
                 <div class="row">
-                    <img class="col-md-4" src="../ image/${quotes.block_type.substr(0, 6)}/${quotes.block_type}.png" alt="">
+                    <img class="col-md-4" src="../https://brianfontaine.github.io/solucef-api-cdn/image//${quotes.block_type.substr(0, 6)}/${quotes.block_type}.png" alt="">
                     <div class="col-md-8">
                         <div class="col-md-5"></div>
                         <h2 class="">Devis N°${quotes.id}</h2>
@@ -67,7 +67,7 @@ setInterval(() => {
 
 
 /* <div class="card col-md-5 mt-3 mx-auto" style="width=18rem;">
-<img class="card-img-top" src="../ image/blockA/${quotes.block_type}.png" alt="Card image cap">
+<img class="card-img-top" src="../https://brianfontaine.github.io/solucef-api-cdn/image//blockA/${quotes.block_type}.png" alt="Cardhttps://brianfontaine.github.io/solucef-api-cdn/image/ cap">
 <div class="card-body">
     <h5 class="card-title">Devis N°${quotes.id}</h5>
     <p class="card-text">Type de bloc : ${quotes.block_type}</p>
